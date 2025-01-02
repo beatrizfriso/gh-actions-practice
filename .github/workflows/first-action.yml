@@ -1,0 +1,13 @@
+# Nome do workflow
+name: First Workflow
+
+# Eventos que vão triggar esse worfkflow
+on: workflow_dispatch
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done! - bye bye"
